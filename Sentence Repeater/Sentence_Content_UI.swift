@@ -13,7 +13,8 @@ struct Sentence_Content_UI: View {
         TextField("input a sentence", text: $sentence_content)
             .frame(height: 120)
             .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
+            .fixedSize(horizontal: false, vertical: true)
+            .border(Color.cyan)
     }
 }
 
