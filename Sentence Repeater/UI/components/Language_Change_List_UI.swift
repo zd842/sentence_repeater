@@ -16,13 +16,12 @@ struct Language_Change_List_UI: View {
     @State private var selectedFlavor: Language_option = .Japanese
     var body: some View {
         List {
-            Picker("Lnaguage", selection: $selectedFlavor) {
+            Picker("Language", selection: $selectedFlavor) {
                 Text("Japanese").tag(Language_option.Japanese)
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
             }
         }
-        .border(Color.cyan)
     }
 }
 
