@@ -19,7 +19,7 @@ struct Language_Change_List_UI: View {
         var id: Self { self }
     }
     
-    @State private var selectedSpeed: Word_up = .
+    @State private var selectedSpeed: Word_up = .s0_9
     @State private var selectedLanguage: Language_option = .Japanese
     
     var body: some View {
