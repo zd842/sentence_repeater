@@ -11,7 +11,7 @@ import SwiftUI
 struct Sentence_RepeaterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Sentence_Content_UI()
         }
     }
 }
