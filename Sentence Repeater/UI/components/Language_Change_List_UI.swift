@@ -14,23 +14,23 @@ struct Language_Change_List_UI: View {
         var id: Self { self }
     }
     
-    enum Language_option: String, CaseIterable, Identifiable {
-        case Japanese, English, Taiwanese
+    enum Word_up: Float, CaseIterable, Identifiable {
+        case 0.9, 1.0, 1.2, 1.5, 2.0
         var id: Self { self }
     }
     
-    @State private var selectedSpeed: Language_option = .Japanese
+    @State private var selectedSpeed: Word_up = .Japanese
     @State private var selectedLanguage: Language_option = .Japanese
     
     var body: some View {
         List {
-            Picker("Language", selection: $selectedFlavor) {
+            Picker("Language", selection: $selectedLanguage) {
                 Text("Japanese").tag(Language_option.Japanese)
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
             }
             Spacer()
-            Picker("Language", selection: $selectedFlavor) {
+            Picker("Speed", selection: $selectedFlavor) {
                 Text("Japanese").tag(Language_option.Japanese)
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
