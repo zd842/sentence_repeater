@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22C5F79B2932ADC700F96E78 /* Sentence_RepeaterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F79A2932ADC700F96E78 /* Sentence_RepeaterApp.swift */; };
+		22C5F79D2932ADC700F96E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F79C2932ADC700F96E78 /* ContentView.swift */; };
+		22C5F79F2932ADCA00F96E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C5F79E2932ADCA00F96E78 /* Assets.xcassets */; };
+		22C5F7A22932ADCA00F96E78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C5F7A12932ADCA00F96E78 /* Preview Assets.xcassets */; };
+		22C5F7AC2932ADCA00F96E78 /* Sentence_RepeaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7AB2932ADCA00F96E78 /* Sentence_RepeaterTests.swift */; };
+		22C5F7B62932ADCA00F96E78 /* Sentence_RepeaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7B52932ADCA00F96E78 /* Sentence_RepeaterUITests.swift */; };
+		22C5F7B82932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7B72932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22C5F7A82932ADCA00F96E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C5F78F2932ADC700F96E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C5F7962932ADC700F96E78;
+			remoteInfo = "Sentence Repeater";
+		};
+		22C5F7B22932ADCA00F96E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C5F78F2932ADC700F96E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C5F7962932ADC700F96E78;
+			remoteInfo = "Sentence Repeater";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22C5F7972932ADC700F96E78 /* Sentence Repeater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentence Repeater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C5F79A2932ADC700F96E78 /* Sentence_RepeaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterApp.swift; sourceTree = "<group>"; };
+		22C5F79C2932ADC700F96E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22C5F79E2932ADCA00F96E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22C5F7A12932ADCA00F96E78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22C5F7A72932ADCA00F96E78 /* Sentence RepeaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentence RepeaterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C5F7AB2932ADCA00F96E78 /* Sentence_RepeaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterTests.swift; sourceTree = "<group>"; };
+		22C5F7B12932ADCA00F96E78 /* Sentence RepeaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentence RepeaterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C5F7B52932ADCA00F96E78 /* Sentence_RepeaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterUITests.swift; sourceTree = "<group>"; };
+		22C5F7B72932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22C5F7942932ADC700F96E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7A42932ADCA00F96E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7AE2932ADCA00F96E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22C5F78E2932ADC700F96E78 = {
+			isa = PBXGroup;
+			children = (
+				22C5F7992932ADC700F96E78 /* Sentence Repeater */,
+				22C5F7AA2932ADCA00F96E78 /* Sentence RepeaterTests */,
+				22C5F7B42932ADCA00F96E78 /* Sentence RepeaterUITests */,
+				22C5F7982932ADC700F96E78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22C5F7982932ADC700F96E78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22C5F7972932ADC700F96E78 /* Sentence Repeater.app */,
+				22C5F7A72932ADCA00F96E78 /* Sentence RepeaterTests.xctest */,
+				22C5F7B12932ADCA00F96E78 /* Sentence RepeaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22C5F7992932ADC700F96E78 /* Sentence Repeater */ = {
+			isa = PBXGroup;
+			children = (
+				22C5F79A2932ADC700F96E78 /* Sentence_RepeaterApp.swift */,
+				22C5F79C2932ADC700F96E78 /* ContentView.swift */,
+				22C5F79E2932ADCA00F96E78 /* Assets.xcassets */,
+				22C5F7A02932ADCA00F96E78 /* Preview Content */,
+			);
+			path = "Sentence Repeater";
+			sourceTree = "<group>";
+		};
+		22C5F7A02932ADCA00F96E78 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22C5F7A12932ADCA00F96E78 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22C5F7AA2932ADCA00F96E78 /* Sentence RepeaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				22C5F7AB2932ADCA00F96E78 /* Sentence_RepeaterTests.swift */,
+			);
+			path = "Sentence RepeaterTests";
+			sourceTree = "<group>";
+		};
+		22C5F7B42932ADCA00F96E78 /* Sentence RepeaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22C5F7B52932ADCA00F96E78 /* Sentence_RepeaterUITests.swift */,
+				22C5F7B72932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift */,
+			);
+			path = "Sentence RepeaterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22C5F7962932ADC700F96E78 /* Sentence Repeater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C5F7BB2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence Repeater" */;
+			buildPhases = (
+				22C5F7932932ADC700F96E78 /* Sources */,
+				22C5F7942932ADC700F96E78 /* Frameworks */,
+				22C5F7952932ADC700F96E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sentence Repeater";
+			productName = "Sentence Repeater";
+			productReference = 22C5F7972932ADC700F96E78 /* Sentence Repeater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22C5F7A62932ADCA00F96E78 /* Sentence RepeaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C5F7BE2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterTests" */;
+			buildPhases = (
+				22C5F7A32932ADCA00F96E78 /* Sources */,
+				22C5F7A42932ADCA00F96E78 /* Frameworks */,
+				22C5F7A52932ADCA00F96E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C5F7A92932ADCA00F96E78 /* PBXTargetDependency */,
+			);
+			name = "Sentence RepeaterTests";
+			productName = "Sentence RepeaterTests";
+			productReference = 22C5F7A72932ADCA00F96E78 /* Sentence RepeaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22C5F7B02932ADCA00F96E78 /* Sentence RepeaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C5F7C12932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterUITests" */;
+			buildPhases = (
+				22C5F7AD2932ADCA00F96E78 /* Sources */,
+				22C5F7AE2932ADCA00F96E78 /* Frameworks */,
+				22C5F7AF2932ADCA00F96E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C5F7B32932ADCA00F96E78 /* PBXTargetDependency */,
+			);
+			name = "Sentence RepeaterUITests";
+			productName = "Sentence RepeaterUITests";
+			productReference = 22C5F7B12932ADCA00F96E78 /* Sentence RepeaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22C5F78F2932ADC700F96E78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					22C5F7962932ADC700F96E78 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					22C5F7A62932ADCA00F96E78 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 22C5F7962932ADC700F96E78;
+					};
+					22C5F7B02932ADCA00F96E78 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 22C5F7962932ADC700F96E78;
+					};
+				};
+			};
+			buildConfigurationList = 22C5F7922932ADC700F96E78 /* Build configuration list for PBXProject "Sentence Repeater" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22C5F78E2932ADC700F96E78;
+			productRefGroup = 22C5F7982932ADC700F96E78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22C5F7962932ADC700F96E78 /* Sentence Repeater */,
+				22C5F7A62932ADCA00F96E78 /* Sentence RepeaterTests */,
+				22C5F7B02932ADCA00F96E78 /* Sentence RepeaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22C5F7952932ADC700F96E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C5F7A22932ADCA00F96E78 /* Preview Assets.xcassets in Resources */,
+				22C5F79F2932ADCA00F96E78 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7A52932ADCA00F96E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7AF2932ADCA00F96E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22C5F7932932ADC700F96E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C5F79D2932ADC700F96E78 /* ContentView.swift in Sources */,
+				22C5F79B2932ADC700F96E78 /* Sentence_RepeaterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7A32932ADCA00F96E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C5F7AC2932ADCA00F96E78 /* Sentence_RepeaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5F7AD2932ADCA00F96E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C5F7B62932ADCA00F96E78 /* Sentence_RepeaterUITests.swift in Sources */,
+				22C5F7B82932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22C5F7A92932ADCA00F96E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C5F7962932ADC700F96E78 /* Sentence Repeater */;
+			targetProxy = 22C5F7A82932ADCA00F96E78 /* PBXContainerItemProxy */;
+		};
+		22C5F7B32932ADCA00F96E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C5F7962932ADC700F96E78 /* Sentence Repeater */;
+			targetProxy = 22C5F7B22932ADCA00F96E78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22C5F7B92932ADCA00F96E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22C5F7BA2932ADCA00F96E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22C5F7BC2932ADCA00F96E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sentence Repeater/Preview Content\"";
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-Repeater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C5F7BD2932ADCA00F96E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sentence Repeater/Preview Content\"";
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-Repeater";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22C5F7BF2932ADCA00F96E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-RepeaterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentence Repeater.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sentence Repeater";
+			};
+			name = Debug;
+		};
+		22C5F7C02932ADCA00F96E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-RepeaterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sentence Repeater.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sentence Repeater";
+			};
+			name = Release;
+		};
+		22C5F7C22932ADCA00F96E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-RepeaterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sentence Repeater";
+			};
+			name = Debug;
+		};
+		22C5F7C32932ADCA00F96E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56N32SYKZ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrysoki.SentenceRepeter.Sentence-RepeaterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sentence Repeater";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22C5F7922932ADC700F96E78 /* Build configuration list for PBXProject "Sentence Repeater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5F7B92932ADCA00F96E78 /* Debug */,
+				22C5F7BA2932ADCA00F96E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C5F7BB2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence Repeater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5F7BC2932ADCA00F96E78 /* Debug */,
+				22C5F7BD2932ADCA00F96E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C5F7BE2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5F7BF2932ADCA00F96E78 /* Debug */,
+				22C5F7C02932ADCA00F96E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C5F7C12932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5F7C22932ADCA00F96E78 /* Debug */,
+				22C5F7C32932ADCA00F96E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22C5F78F2932ADC700F96E78 /* Project object */;
+}
