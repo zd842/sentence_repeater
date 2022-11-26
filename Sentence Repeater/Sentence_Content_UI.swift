@@ -11,7 +11,10 @@ struct Sentence_Content_UI: View {
     @State private var sentence_content: String = ""
     var body: some View {
         TextField("input a sentence", text: $sentence_content)
-            .textFieldStyle(.roundedBorder)
+            .frame(height: 50)
+            .border(Color.cyan)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
     }
 }
 
