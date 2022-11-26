@@ -11,7 +11,7 @@ struct Sentence_Content_UI: View {
     @State private var sentence_content: String = ""
     var body: some View {
         TextField("input a sentence", text: $sentence_content)
-            .font(Font.system(size: 50, weight: .heavy, design: .monospaced))
+            .font(Font.system(size: 50, weight: .semibold, design: .monospaced))
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .fixedSize(horizontal: false, vertical: true)
             .padding()
