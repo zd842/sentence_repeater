@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct Language_Change_List_UI: View {
+    enum Language_option: String, CaseIterable, Identifiable {
+        case Japanese, English, Taiwanese
+        var id: Self { self }
+    }
+    
+    @State private var selectedFlavor: Language_option = .Japanese
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            Picker("Lnaguage", selection: $selectedFlavor) {
+                Text("Japanese").tag(Language_option.Japanese)
+                Text("English").tag(Language_option.English)
+                Text("Taiwanese").tag(Language_option.Taiwanese)
+            }
+        }
+        .border(Color.cyan)
     }
 }
 

@@ -76,6 +76,7 @@
 		228969C22932C61100E0AA51 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				22C5F79A2932ADC700F96E78 /* Sentence_RepeaterApp.swift */,
 				228969C32932C61F00E0AA51 /* components */,
 			);
 			path = UI;
@@ -114,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				228969C22932C61100E0AA51 /* UI */,
-				22C5F79A2932ADC700F96E78 /* Sentence_RepeaterApp.swift */,
 				22C5F79E2932ADCA00F96E78 /* Assets.xcassets */,
 				22C5F7A02932ADCA00F96E78 /* Preview Content */,
 			);

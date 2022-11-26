@@ -11,7 +11,10 @@ import SwiftUI
 struct Sentence_RepeaterApp: App {
     var body: some Scene {
         WindowGroup {
-            Sentence_Content_UI()
+            HStack{
+                Language_Change_List_UI()
+                Sentence_Content_UI()
+            }
         }
     }
 }
