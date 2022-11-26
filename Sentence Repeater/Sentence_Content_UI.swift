@@ -11,10 +11,10 @@ struct Sentence_Content_UI: View {
     @State private var sentence_content: String = ""
     var body: some View {
         TextField("input a sentence", text: $sentence_content)
-            .font(Font.system(size: 30, weight: .medium, design: .serif))
+            .font(Font.system(size: 50, weight: .medium, design: .monospaced))
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .fixedSize(horizontal: false, vertical: true)
-            .border(Color.cyan)
+//            .border(Color.cyan)
             .padding()
     }
 }
