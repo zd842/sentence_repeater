@@ -19,8 +19,8 @@ struct Language_Change_List_UI: View {
         var id: Self { self }
     }
     
-    @State private var selectedSpeed: Word_up = .s0_9
     @State private var selectedLanguage: Language_option = .Japanese
+    @State private var selectedSpeed: Word_up = .s0_9
     
     var body: some View {
         List {
@@ -29,7 +29,6 @@ struct Language_Change_List_UI: View {
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
             }
-            Spacer()
             Picker("Speed", selection: $selectedSpeed) {
                 Text("Japanese").tag(Language_option.Japanese)
                 Text("English").tag(Language_option.English)
