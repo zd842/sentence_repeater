@@ -45,7 +45,6 @@ struct Language_Change_List_UI: View {
                 } else {
                     Text("tw_1").tag(Language_voice.tw_1)
                 }
-
             }
             Picker("Speed", selection: $selectedSpeed) {
                 Text("0.9").tag(Word_up.s0_9)
