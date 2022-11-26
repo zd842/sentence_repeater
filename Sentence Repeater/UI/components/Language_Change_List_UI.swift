@@ -15,11 +15,7 @@ struct Language_Change_List_UI: View {
     }
     
     enum Word_up: String, CaseIterable, Identifiable {
-        case s0.9 returnn 0.9
-        case s1.0
-        case s1.2
-        case s1.5
-        case s2.0
+        case s0_9, s1_0, s1_2, s1_5, s2_0
         var id: Self { self }
     }
     
