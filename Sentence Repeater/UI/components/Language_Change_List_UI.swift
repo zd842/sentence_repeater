@@ -35,7 +35,7 @@ struct Language_Change_List_UI: View {
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
             }
-            Picker("Language", selection: $selectedVoice) {
+            Picker("Voice", selection: $selectedVoice) {
                 if selectedLanguage == .English {
                     Text("eng_1").tag(Language_voice.eng_1)
                     Text("eng_2").tag(Language_voice.eng_2)
