@@ -45,9 +45,7 @@ struct Language_Change_List_UI: View {
                 } else {
                     Text("tw_1").tag(Language_voice.tw_1)
                 }
-                Text("Japanese").tag(Language_option.Japanese)
-                Text("English").tag(Language_option.English)
-                Text("Taiwanese").tag(Language_option.Taiwanese)
+
             }
             Picker("Speed", selection: $selectedSpeed) {
                 Text("0.9").tag(Word_up.s0_9)
