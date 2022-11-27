@@ -43,7 +43,6 @@ struct Control_Buttons_UI: View {
                 Image(systemName: "gobackward")
                     .foregroundColor(Color.white)
             })
-
             Spacer()
         }
     }
