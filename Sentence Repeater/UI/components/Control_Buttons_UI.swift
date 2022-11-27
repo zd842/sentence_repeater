@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Control_Buttons_UI: View {
     @State private var value = 0
-    let step = 5
+    let step = 3
     let range = 1...50
     
     var body: some View {
@@ -21,7 +21,7 @@ struct Control_Buttons_UI: View {
                 Text("\(value) times")
                     .font(.system(.footnote))
             }
-                     .frame(width: 150)
+                     .frame(width: 170)
                      .foregroundColor(Color.white)
             Text("|")
             Button(action: {
