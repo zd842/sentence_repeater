@@ -12,7 +12,7 @@ class Fetch_Voice_from_Azure {
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
     
-    var inputText: String = "here so good."
+    var inputText: String = "This's a text."
     func synthesisToSpeaker(times: Int) {
         var speechConfig: SPXSpeechConfiguration?
         do {

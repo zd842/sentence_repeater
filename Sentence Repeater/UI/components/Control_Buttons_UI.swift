@@ -11,7 +11,7 @@ struct Control_Buttons_UI: View {
     var fetch_voice_from_Azure = Fetch_Voice_from_Azure()
     @State private var value = 0
     let step = 3
-    let range = 1...50
+    let range = 0...50
     
     var body: some View {
         HStack {
