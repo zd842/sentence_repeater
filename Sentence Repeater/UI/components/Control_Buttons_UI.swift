@@ -18,7 +18,7 @@ struct Control_Buttons_UI: View {
             Stepper(value: $value,
                      in: range,
                      step: step) {
-                Text("\(step) times")
+                Text("\(value) times")
                     .font(.system(.footnote))
             }
                      .frame(width: 150)
