@@ -15,6 +15,12 @@ struct Control_Buttons_UI: View {
             }, label: {
                 Image(systemName: "gobackward")
             })
+            Text("|")
+            Button(action: {
+                print("one-time-shot play")
+            }, label: {
+                Image(systemName: "play.circle")
+            })
         }
     }
 }

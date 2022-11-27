@@ -12,7 +12,11 @@ struct Sentence_RepeaterApp: App {
     var body: some Scene {
         WindowGroup {
             HStack{
-                Language_Change_List_UI()
+                VStack {
+                    Language_Change_List_UI()
+                    
+                }
+                
                 Sentence_Content_UI()
             }
         }
