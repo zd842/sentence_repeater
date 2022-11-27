@@ -9,8 +9,9 @@ import SwiftUI
 
 struct Control_Buttons_UI: View {
     var fetch_voice_from_Azure = Fetch_Voice_from_Azure()
-    @State private var value: Int = 0
-    @State private var input_text: String = "here is another one"
+    @EnvironmentObject var fetch_voice_workflow_object: Fetch_Voice_from_Azure
+//    @State private var value: Int = 0
+//    @State private var input_text: String = "here is another one"
     
     let step = 3
     let range = 0...50

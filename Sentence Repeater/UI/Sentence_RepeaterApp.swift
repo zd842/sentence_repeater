@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Sentence_RepeaterApp: App {
+    @StateObject var fetch_voice_workflow_object = Fetch_Voice_from_Azure()
     var body: some Scene {
         WindowGroup {
             HStack{
@@ -20,6 +21,7 @@ struct Sentence_RepeaterApp: App {
                 
                 Sentence_Content_UI()
             }
+            .environmentObject(fetch_voice_workflow_object)
         }
     }
 }
