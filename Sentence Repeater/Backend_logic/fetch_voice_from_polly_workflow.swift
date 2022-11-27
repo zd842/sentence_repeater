@@ -27,7 +27,8 @@ class Fetch_Voice_from_Azure: ObservableObject {
             return
         }
 
-        for _ in 0...times {
+        for tt in 0...times {
+            print(tt)
             let result = try! synthesizer.speakText(input_text)
             if result.reason == SPXResultReason.canceled
             {
