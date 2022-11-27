@@ -27,7 +27,10 @@ struct Control_Buttons_UI: View {
             Text("|")
             Button(action: {
                 print("repetitively play")
-                fetch_voice_workflow_object.synthesisToSpeaker(times: ($fetch_voice_workflow_object.times.wrappedValue - 1), input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                if $fetch_voice_workflow_object.times.wrappedValue != 0 {
+                    fetch_voice_workflow_object.synthesisToSpeaker(times: $fetch_voice_workflow_object.times.wrappedValue, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                }
+                
             }, label: {
                 Image(systemName: "gobackward")
                     .foregroundColor(Color.white)
