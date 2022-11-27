@@ -12,8 +12,7 @@ class Fetch_Voice_from_Azure {
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
     
-    var inputText: String = "This's a text."
-    func synthesisToSpeaker(times: Int) {
+    func synthesisToSpeaker(times: Int, input_text: String) {
         var speechConfig: SPXSpeechConfiguration?
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
@@ -22,16 +21,12 @@ class Fetch_Voice_from_Azure {
             speechConfig = nil
         }
         let synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
-        if inputText.isEmpty {
+        if input_text.isEmpty {
             return
         }
-//        var fetched_result = try! synthesizer.getVoices()
-//        print(type(of: fetched_result))
-//        var fetched_voices = fetched_result.properties
-//        print(fetched_voices)
-//        print(type(of: fetched_voices))
+
         for _ in 0...times {
-            let result = try! synthesizer.speakText(inputText)
+            let result = try! synthesizer.speakText(input_text)
             if result.reason == SPXResultReason.canceled
             {
                 let cancellationDetails = try! SPXSpeechSynthesisCancellationDetails(fromCanceledSynthesisResult: result)

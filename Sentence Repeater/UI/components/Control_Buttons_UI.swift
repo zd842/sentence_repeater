@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Control_Buttons_UI: View {
     var fetch_voice_from_Azure = Fetch_Voice_from_Azure()
-    @State private var value = 0
+    @State private var value: Int = 0
+    @State private var input_text: String = "here is another one"
+    
     let step = 3
     let range = 0...50
     
@@ -34,7 +36,7 @@ struct Control_Buttons_UI: View {
             Text("|")
             Button(action: {
                 print("one-time-shot play")
-                fetch_voice_from_Azure.synthesisToSpeaker(times: $value.wrappedValue)
+                fetch_voice_from_Azure.synthesisToSpeaker(times: $value.wrappedValue, input_text: $input_text.wrappedValue)
             }, label: {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
