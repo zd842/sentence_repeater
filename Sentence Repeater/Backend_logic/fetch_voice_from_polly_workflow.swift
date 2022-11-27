@@ -12,7 +12,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
     @Published var times: Int = 0
-    @Published var input_text: String = ""
+    @Published var input_text: String = "here two"
     
     func synthesisToSpeaker(times: Int, input_text: String) {
         var speechConfig: SPXSpeechConfiguration?
