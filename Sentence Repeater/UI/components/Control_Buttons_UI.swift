@@ -28,7 +28,7 @@ struct Control_Buttons_UI: View {
             Button(action: {
                 print("repetitively play")
                 if $fetch_voice_workflow_object.times.wrappedValue != 0 {
-                    fetch_voice_workflow_object.synthesisToSpeaker(times: $fetch_voice_workflow_object.times.wrappedValue, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                    fetch_voice_workflow_object.synthesisToSpeaker(times: ($fetch_voice_workflow_object.times.wrappedValue - 1), input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
                 }
                 
             }, label: {
