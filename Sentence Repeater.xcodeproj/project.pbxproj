@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22870F6929334D3100688BF9 /* fetch_voice_from_polly_workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */; };
 		228969C12932BF6E00E0AA51 /* Sentence_Content_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C02932BF6E00E0AA51 /* Sentence_Content_UI.swift */; };
 		228969C52932C66600E0AA51 /* Language_Change_List_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C42932C66600E0AA51 /* Language_Change_List_UI.swift */; };
 		228969C72932E1FF00E0AA51 /* Control_Buttons_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C62932E1FF00E0AA51 /* Control_Buttons_UI.swift */; };
@@ -16,6 +17,9 @@
 		22C5F7AC2932ADCA00F96E78 /* Sentence_RepeaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7AB2932ADCA00F96E78 /* Sentence_RepeaterTests.swift */; };
 		22C5F7B62932ADCA00F96E78 /* Sentence_RepeaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7B52932ADCA00F96E78 /* Sentence_RepeaterUITests.swift */; };
 		22C5F7B82932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C5F7B72932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift */; };
+		437676EDEADC35222A3A1AF5 /* Pods_Sentence_Repeater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91070CF603DABF21E9426F3 /* Pods_Sentence_Repeater.framework */; };
+		7D92E9673AEB1292F204C81F /* Pods_Sentence_RepeaterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFDB7DEE5E6424B9D3C58AC /* Pods_Sentence_RepeaterTests.framework */; };
+		ABB4F4C24B95F3F0B6BD8B5E /* Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5727791AA97202EF5364BB47 /* Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BF48F7844068DD7208495B0 /* Pods-Sentence RepeaterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence RepeaterTests.release.xcconfig"; path = "Target Support Files/Pods-Sentence RepeaterTests/Pods-Sentence RepeaterTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C341959F2FDE25D3BB91346 /* Pods-Sentence RepeaterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence RepeaterTests.debug.xcconfig"; path = "Target Support Files/Pods-Sentence RepeaterTests/Pods-Sentence RepeaterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E664407B2D2153069577125 /* Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetch_voice_from_polly_workflow.swift; sourceTree = "<group>"; };
 		228969C02932BF6E00E0AA51 /* Sentence_Content_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_Content_UI.swift; sourceTree = "<group>"; };
 		228969C42932C66600E0AA51 /* Language_Change_List_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language_Change_List_UI.swift; sourceTree = "<group>"; };
 		228969C62932E1FF00E0AA51 /* Control_Buttons_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control_Buttons_UI.swift; sourceTree = "<group>"; };
@@ -48,6 +56,12 @@
 		22C5F7B12932ADCA00F96E78 /* Sentence RepeaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentence RepeaterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C5F7B52932ADCA00F96E78 /* Sentence_RepeaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterUITests.swift; sourceTree = "<group>"; };
 		22C5F7B72932ADCA00F96E78 /* Sentence_RepeaterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_RepeaterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		241128CADF21AC5A9903048E /* Pods-Sentence Repeater-Sentence RepeaterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence Repeater-Sentence RepeaterUITests.release.xcconfig"; path = "Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AFDB7DEE5E6424B9D3C58AC /* Pods_Sentence_RepeaterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentence_RepeaterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51804696F39A59FDD82A8BA1 /* Pods-Sentence Repeater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence Repeater.release.xcconfig"; path = "Target Support Files/Pods-Sentence Repeater/Pods-Sentence Repeater.release.xcconfig"; sourceTree = "<group>"; };
+		5727791AA97202EF5364BB47 /* Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BF94D50334678754A456E7 /* Pods-Sentence Repeater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence Repeater.debug.xcconfig"; path = "Target Support Files/Pods-Sentence Repeater/Pods-Sentence Repeater.debug.xcconfig"; sourceTree = "<group>"; };
+		F91070CF603DABF21E9426F3 /* Pods_Sentence_Repeater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentence_Repeater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437676EDEADC35222A3A1AF5 /* Pods_Sentence_Repeater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D92E9673AEB1292F204C81F /* Pods_Sentence_RepeaterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +85,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB4F4C24B95F3F0B6BD8B5E /* Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22870F6729334D0400688BF9 /* Backend_logic */ = {
+			isa = PBXGroup;
+			children = (
+				22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */,
+			);
+			path = Backend_logic;
+			sourceTree = "<group>";
+		};
 		228969C22932C61100E0AA51 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,13 +119,6 @@
 			path = components;
 			sourceTree = "<group>";
 		};
-		228969C82932F14700E0AA51 /* Backend_Logics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Backend_Logics;
-			sourceTree = "<group>";
-		};
 		22C5F78E2932ADC700F96E78 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +126,8 @@
 				22C5F7AA2932ADCA00F96E78 /* Sentence RepeaterTests */,
 				22C5F7B42932ADCA00F96E78 /* Sentence RepeaterUITests */,
 				22C5F7982932ADC700F96E78 /* Products */,
+				755C342B24E6C299884C3B65 /* Pods */,
+				B35022EA61E436102F147CEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,8 +144,8 @@
 		22C5F7992932ADC700F96E78 /* Sentence Repeater */ = {
 			isa = PBXGroup;
 			children = (
+				22870F6729334D0400688BF9 /* Backend_logic */,
 				228969C22932C61100E0AA51 /* UI */,
-				228969C82932F14700E0AA51 /* Backend_Logics */,
 				22C5F79E2932ADCA00F96E78 /* Assets.xcassets */,
 				22C5F7A02932ADCA00F96E78 /* Preview Content */,
 			);
@@ -157,6 +177,29 @@
 			path = "Sentence RepeaterUITests";
 			sourceTree = "<group>";
 		};
+		755C342B24E6C299884C3B65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7BF94D50334678754A456E7 /* Pods-Sentence Repeater.debug.xcconfig */,
+				51804696F39A59FDD82A8BA1 /* Pods-Sentence Repeater.release.xcconfig */,
+				1E664407B2D2153069577125 /* Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig */,
+				241128CADF21AC5A9903048E /* Pods-Sentence Repeater-Sentence RepeaterUITests.release.xcconfig */,
+				1C341959F2FDE25D3BB91346 /* Pods-Sentence RepeaterTests.debug.xcconfig */,
+				1BF48F7844068DD7208495B0 /* Pods-Sentence RepeaterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B35022EA61E436102F147CEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F91070CF603DABF21E9426F3 /* Pods_Sentence_Repeater.framework */,
+				5727791AA97202EF5364BB47 /* Pods_Sentence_Repeater_Sentence_RepeaterUITests.framework */,
+				2AFDB7DEE5E6424B9D3C58AC /* Pods_Sentence_RepeaterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C5F7BB2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence Repeater" */;
 			buildPhases = (
+				21AE98B560478D095DF1338C /* [CP] Check Pods Manifest.lock */,
 				22C5F7932932ADC700F96E78 /* Sources */,
 				22C5F7942932ADC700F96E78 /* Frameworks */,
 				22C5F7952932ADC700F96E78 /* Resources */,
+				A1AA59F2D0A85B6344C3C002 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C5F7BE2932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterTests" */;
 			buildPhases = (
+				8D8CCA50687B794F4F58876C /* [CP] Check Pods Manifest.lock */,
 				22C5F7A32932ADCA00F96E78 /* Sources */,
 				22C5F7A42932ADCA00F96E78 /* Frameworks */,
 				22C5F7A52932ADCA00F96E78 /* Resources */,
@@ -199,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C5F7C12932ADCA00F96E78 /* Build configuration list for PBXNativeTarget "Sentence RepeaterUITests" */;
 			buildPhases = (
+				4ECBEA422155F40C6FF23900 /* [CP] Check Pods Manifest.lock */,
 				22C5F7AD2932ADCA00F96E78 /* Sources */,
 				22C5F7AE2932ADCA00F96E78 /* Frameworks */,
 				22C5F7AF2932ADCA00F96E78 /* Resources */,
+				7AF55757A0858F037AC54E73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +330,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21AE98B560478D095DF1338C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentence Repeater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ECBEA422155F40C6FF23900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentence Repeater-Sentence RepeaterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF55757A0858F037AC54E73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8CCA50687B794F4F58876C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentence RepeaterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1AA59F2D0A85B6344C3C002 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater/Pods-Sentence Repeater-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater/Pods-Sentence Repeater-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sentence Repeater/Pods-Sentence Repeater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22C5F7932932ADC700F96E78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -290,6 +441,7 @@
 				228969C52932C66600E0AA51 /* Language_Change_List_UI.swift in Sources */,
 				228969C12932BF6E00E0AA51 /* Sentence_Content_UI.swift in Sources */,
 				22C5F79B2932ADC700F96E78 /* Sentence_RepeaterApp.swift in Sources */,
+				22870F6929334D3100688BF9 /* fetch_voice_from_polly_workflow.swift in Sources */,
 				228969C72932E1FF00E0AA51 /* Control_Buttons_UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +595,7 @@
 		};
 		22C5F7BC2932ADCA00F96E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BF94D50334678754A456E7 /* Pods-Sentence Repeater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +625,7 @@
 		};
 		22C5F7BD2932ADCA00F96E78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51804696F39A59FDD82A8BA1 /* Pods-Sentence Repeater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +655,7 @@
 		};
 		22C5F7BF2932ADCA00F96E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C341959F2FDE25D3BB91346 /* Pods-Sentence RepeaterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -521,6 +676,7 @@
 		};
 		22C5F7C02932ADCA00F96E78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BF48F7844068DD7208495B0 /* Pods-Sentence RepeaterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +697,7 @@
 		};
 		22C5F7C22932ADCA00F96E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E664407B2D2153069577125 /* Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +716,7 @@
 		};
 		22C5F7C32932ADCA00F96E78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241128CADF21AC5A9903048E /* Pods-Sentence Repeater-Sentence RepeaterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
