@@ -46,13 +46,13 @@ struct Language_Change_List_UI: View {
                     Text("tw_1").tag(Language_voice.tw_1)
                 }
             }
-            Picker("Speed", selection: $selectedSpeed) {
-                Text("0.9").tag(Word_up.s0_9)
-                Text("1.0").tag(Word_up.s1_0)
-                Text("1.2").tag(Word_up.s1_2)
-                Text("1.5").tag(Word_up.s1_5)
-                Text("2.0").tag(Word_up.s2_0)
-            }
+//            Picker("Speed", selection: $selectedSpeed) {
+//                Text("0.9").tag(Word_up.s0_9)
+//                Text("1.0").tag(Word_up.s1_0)
+//                Text("1.2").tag(Word_up.s1_2)
+//                Text("1.5").tag(Word_up.s1_5)
+//                Text("2.0").tag(Word_up.s2_0)
+//            }
         }
     }
 }
