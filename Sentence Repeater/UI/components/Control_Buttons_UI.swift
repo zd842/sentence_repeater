@@ -22,7 +22,7 @@ struct Control_Buttons_UI: View {
             Stepper(value: $fetch_voice_workflow_object.times,
                      in: range,
                      step: step) {
-                Text("\($fetch_voice_workflow_object.times) times")
+                Text("\($fetch_voice_workflow_object.times.wrappedValue) times")
                     .font(.system(.footnote))
             }
                      .frame(width: 170)
@@ -37,7 +37,7 @@ struct Control_Buttons_UI: View {
             Text("|")
             Button(action: {
                 print("one-time-shot play")
-                fetch_voice_from_Azure.synthesisToSpeaker(times: $value.wrappedValue, input_text: $input_text.wrappedValue)
+                fetch_voice_from_Azure.synthesisToSpeaker(times: $fetch_voice_workflow_object.times.wrappedValue, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
             }, label: {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
