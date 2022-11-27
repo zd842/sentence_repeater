@@ -33,6 +33,7 @@ struct Control_Buttons_UI: View {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
             })
+            
             Text("|")
             Button(action: {
                 print("repetitively play")
