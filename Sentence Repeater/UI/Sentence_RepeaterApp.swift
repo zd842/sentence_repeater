@@ -14,7 +14,7 @@ struct Sentence_RepeaterApp: App {
             HStack{
                 VStack {
                     Language_Change_List_UI()
-                    
+                    Control_Buttons_UI
                 }
                 
                 Sentence_Content_UI()
