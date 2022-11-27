@@ -10,7 +10,7 @@ import SwiftUI
 struct Control_Buttons_UI: View {
     @State private var value = 0
     let step = 3
-    let range = 1...50
+    let range = 1...200
     
     var body: some View {
         HStack {
