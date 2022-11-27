@@ -10,19 +10,19 @@ import SwiftUI
 struct Control_Buttons_UI: View {
     var fetch_voice_from_Azure = Fetch_Voice_from_Azure()
     @EnvironmentObject var fetch_voice_workflow_object: Fetch_Voice_from_Azure
-//    @State private var value: Int = 0
+
 //    @State private var input_text: String = "here is another one"
-    
+//    @State private var value: Int = 0
     let step = 3
     let range = 0...50
     
     var body: some View {
         HStack {
             Spacer()
-            Stepper(value: $value,
+            Stepper(value: $fetch_voice_workflow_object.times,
                      in: range,
                      step: step) {
-                Text("\(value) times")
+                Text("\($fetch_voice_workflow_object.times) times")
                     .font(.system(.footnote))
             }
                      .frame(width: 170)
