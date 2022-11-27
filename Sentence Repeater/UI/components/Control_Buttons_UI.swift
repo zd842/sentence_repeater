@@ -24,6 +24,14 @@ struct Control_Buttons_UI: View {
             }
                      .frame(width: 170)
                      .foregroundColor(Color.white)
+                        Text("|")
+            Button(action: {
+                print("one-time-shot play")
+                fetch_voice_workflow_object.synthesisToSpeaker(times: 0, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+            }, label: {
+                Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
+            })
             Text("|")
             Button(action: {
                 print("repetitively play")
@@ -35,14 +43,7 @@ struct Control_Buttons_UI: View {
                 Image(systemName: "gobackward")
                     .foregroundColor(Color.white)
             })
-            Text("|")
-            Button(action: {
-                print("one-time-shot play")
-                fetch_voice_workflow_object.synthesisToSpeaker(times: 0, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
-            }, label: {
-                Image(systemName: "play.circle")
-                    .foregroundColor(Color.white)
-            })
+
             Spacer()
         }
     }
