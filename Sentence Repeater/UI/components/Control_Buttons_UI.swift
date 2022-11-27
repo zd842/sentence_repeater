@@ -34,7 +34,7 @@ struct Control_Buttons_UI: View {
             Text("|")
             Button(action: {
                 print("one-time-shot play")
-                fetch_voice_from_Azure.synthesisToSpeaker()
+                fetch_voice_from_Azure.synthesisToSpeaker(times: $value.wrappedValue)
             }, label: {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
