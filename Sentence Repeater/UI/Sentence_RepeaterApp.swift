@@ -16,6 +16,7 @@ struct Sentence_RepeaterApp: App {
                     Language_Change_List_UI()
                     Control_Buttons_UI()
                 }
+                .background(Color.cyan)
                 
                 Sentence_Content_UI()
             }

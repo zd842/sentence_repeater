@@ -8,19 +8,36 @@
 import SwiftUI
 
 struct Control_Buttons_UI: View {
+    @State private var value = 0
+    let step = 5
+    let range = 1...50
+    
     var body: some View {
         HStack {
+            Spacer()
+            Stepper(value: $value,
+                     in: range,
+                     step: step) {
+                Text("\(step) times")
+                    .font(.system(.footnote))
+            }
+                     .frame(width: 150)
+                     .foregroundColor(Color.white)
+            Text("|")
             Button(action: {
                 print("repetitively play")
             }, label: {
                 Image(systemName: "gobackward")
+                    .foregroundColor(Color.white)
             })
             Text("|")
             Button(action: {
                 print("one-time-shot play")
             }, label: {
                 Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
             })
+            Spacer()
         }
     }
 }
