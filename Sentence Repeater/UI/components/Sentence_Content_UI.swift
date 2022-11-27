@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Sentence_Content_UI: View {
+    @EnvironmentObject var fe
     @State private var sentence_content: String = ""
     var body: some View {
         TextField("input a sentence", text: $sentence_content)
