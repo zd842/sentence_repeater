@@ -12,7 +12,7 @@ import AVFoundation
 
 class Fetch_voice_from_apply_synth: ObservableObject {
     var utterance = AVSpeechUtterance()
-    var voice = AVSpeechSynthesisVoice(language: "en-US")
+    var voice = AVSpeechSynthesisVoice(language: "ja")
     var voice_in_queue = [AVSpeechUtterance]()
     let synthesizer = AVSpeechSynthesizer()
     
@@ -30,11 +30,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.change_initialVolume()
         self.utterance.voice = voice
     }
-    // Configure the utterance.
-//    utterance.rate = 0.9
-//    utterance.pitchMultiplier = 0.8
-//    utterance.postUtteranceDelay = 0.2
-//    utterance.volume = 0.8
     
 
     func change_rate(rate: Int = 1) {
@@ -78,9 +73,8 @@ class Fetch_voice_from_apply_synth: ObservableObject {
             for _ in 0...(times - 1) {
                 self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
             }
-            print(voice_in_queue.count)
             for ur in self.voice_in_queue {
-                print(ur.voice?.name)
+                print(ur.voice?.language)
                 self.synthesizer.speak(ur)
             }
         }
