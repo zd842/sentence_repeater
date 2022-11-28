@@ -17,8 +17,8 @@ struct Language_Change_List_UI: View {
 
     
     
-    @State private var selectedLanguage: Language_option = .ja
-    @State private var selectedVoice: Language_voice = .jap_1
+    @State private var selectedLanguage: Int = 0
+    @State private var selectedVoice: Int = 0
     @State private var selectedSpeed: Int = 0
     
     var body: some View {
@@ -28,7 +28,7 @@ struct Language_Change_List_UI: View {
                 Text("English-US").tag(1)
                 Text("English-GB").tag(2)
             }
-            .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag.rawValue) }
+            .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag) }
 //            Picker("Voice", selection: $selectedVoice) {
 //                if selectedLanguage == .English {
 //                    Text("eng_1").tag(Language_voice.eng_1)
