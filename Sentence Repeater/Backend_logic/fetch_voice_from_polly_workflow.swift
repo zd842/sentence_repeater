@@ -22,7 +22,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
          region: String = "eastus",
          synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer(),
          times: Int = 0,
-         input_text: String = "fouth and forward") {
+         input_text: String = "fourth and forward") {
         self.sub = sub
         self.region = region
         self.times = times
