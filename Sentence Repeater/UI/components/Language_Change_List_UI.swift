@@ -35,23 +35,23 @@ struct Language_Change_List_UI: View {
                 Text("English").tag(Language_option.English)
                 Text("Taiwanese").tag(Language_option.Taiwanese)
             }
-            Picker("Voice", selection: $selectedVoice) {
-                if selectedLanguage == .English {
-                    Text("eng_1").tag(Language_voice.eng_1)
-                    Text("eng_2").tag(Language_voice.eng_2)
-                } else if selectedLanguage == .Japanese {
-                    Text("jap_1").tag(Language_voice.jap_1)
-                    Text("jap_2").tag(Language_voice.jap_2)
-                } else {
-                    Text("tw_1").tag(Language_voice.tw_1)
-                }
-            }
+//            Picker("Voice", selection: $selectedVoice) {
+//                if selectedLanguage == .English {
+//                    Text("eng_1").tag(Language_voice.eng_1)
+//                    Text("eng_2").tag(Language_voice.eng_2)
+//                } else if selectedLanguage == .Japanese {
+//                    Text("jap_1").tag(Language_voice.jap_1)
+//                    Text("jap_2").tag(Language_voice.jap_2)
+//                } else {
+//                    Text("tw_1").tag(Language_voice.tw_1)
+//                }
+//            }
             Picker("Speed", selection: $selectedSpeed) {
-                Text("0.9").tag(Word_up.s0_9)
-                Text("1.0").tag(Word_up.s1_0)
-                Text("1.2").tag(Word_up.s1_2)
-                Text("1.5").tag(Word_up.s1_5)
-                Text("2.0").tag(Word_up.s2_0)
+                Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
+                Image(systemName: String).tag(<#T##tag: Hashable##Hashable#>)
+                Image(systemName: String).tag(<#T##tag: Hashable##Hashable#>)
+                Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
+                Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
             }
         }
     }

@@ -19,6 +19,8 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     var voice_in_queue = [AVSpeechUtterance]()
     let synthesizer = AVSpeechSynthesizer()
     
+    let repeat_value: Int = 200
+    
     @Published var times: Int = 0
     @Published var input_text: String
 

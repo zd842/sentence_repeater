@@ -53,7 +53,7 @@ struct Control_Buttons_UI: View {
             })
             Button(action: {
                 print("\(Int.max)")
-                fetch_voice_workflow_object.synthesisToSpeaker(times: Int.max, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                fetch_voice_workflow_object.synthesisToSpeaker(times: fetch_voice_workflow_object.repeat_value, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
             }, label: {
                 Image(systemName: "repeat.circle")
                     .foregroundColor(Color.white)
