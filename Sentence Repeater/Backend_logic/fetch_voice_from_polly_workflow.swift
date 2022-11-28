@@ -16,6 +16,14 @@ class Fetch_Voice_from_Azure: ObservableObject {
     @Published var times: Int = 0
     @Published var input_text: String = "here two"
     
+    func increseTimes(step: Int) {
+        times += step
+    }
+    
+    func resetTimes() {
+        times = 0
+    }
+    
     func synthesisToSpeaker(times: Int, input_text: String) {
         var speechConfig: SPXSpeechConfiguration?
         do {
