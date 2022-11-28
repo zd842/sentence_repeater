@@ -60,12 +60,15 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
+        print("here")
         if times != 0 {
             for tt in 0...(times - 1) {
-                print(tt)
-                if (times != 0) {
-                    self.synthesizer.speak(self.utterance)
-                    }
+                while (!synthesizer.isSpeaking) {
+                    if (times != 0) {
+                        self.synthesizer.speak(self.utterance)
+                        }
+                }
+
                 }
             }
         }
