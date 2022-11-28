@@ -41,7 +41,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         } else {
             return 0.3
         }
-        print(self.utterance.rate)
     }
     
     func change_pitch(pitch: Float = 0.9) {
@@ -80,6 +79,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
             for ur in self.voice_in_queue {
                 print(ur.voice?.language)
                 print(ur.voice?.name)
+                print(ur.rate)
                 self.synthesizer.speak(ur)
             }
         }
