@@ -17,6 +17,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     let synthesizer = AVSpeechSynthesizer()
     
     let repeat_value: Int = 200
+    var language: String = "ja"
     
     
     @Published var times: Int = 0
@@ -55,19 +56,16 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.utterance.volume = initialVoice
     }
     
-    func change_detectedLanguage(detevtedLan: Int) -> Striing {
+    func change_detectedLanguage(detevtedLan: Int) {
         if detevtedLan == 0 {
-            return "ja"
+            self.language =  "ja"
         } else if detevtedLan == 1 {
-            return "en-US"
+            self.language = "en-US"
         } else if detevtedLan == 2 {
-            return "en-GB"
+            self.language = "en-GB"
         } else {
-            return "zh-TW"
+            self.language = "zh-TW"
         }
-        print(self.utterance.voice?.language)
-        print(self.utterance.voice?.identifier)
-        print(self.utterance.voice?.name)
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
