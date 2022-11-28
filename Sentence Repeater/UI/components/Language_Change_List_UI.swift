@@ -29,8 +29,8 @@ struct Language_Change_List_UI: View {
         List {
             Picker("Language", selection: $selectedLanguage) {
                 Text("Japanese").tag(Language_option.ja)
-                Text("English").tag(Language_option.us)
-                Text("Taiwanese").tag(Language_option.uk)
+                Text("English-US").tag(Language_option.us)
+                Text("English-GB").tag(Language_option.uk)
             }
             .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag.rawValue) }
 //            Picker("Voice", selection: $selectedVoice) {
