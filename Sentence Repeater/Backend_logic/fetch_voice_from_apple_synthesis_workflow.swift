@@ -12,17 +12,18 @@ import AVFoundation
 
 class Fetch_voice_from_apply_synth: ObservableObject {
     // Create an utterance.
-    var utterance = AVSpeechUtterance(string: "The quick brown fox jumped over the lazy dog.")
+    var utterance = AVSpeechUtterance()
     // Retrieve the British English voice.
     var voice = AVSpeechSynthesisVoice(language: "en-GB")
     // Create a speech synthesizer.
     let synthesizer = AVSpeechSynthesizer()
     
     @Published var times: Int = 0
-    @Published var input_text: String = "apple synth"
+    @Published var input_text: String
 
-    
     init() {
+        self.input_text = "apple synth"
+        self.utterance = AVSpeechUtterance(self.input_text)
         self.change_rate()
         self.change_pitch()
         self.change_postDelay()
@@ -38,7 +39,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
 //    utterance.volume = 0.8
     
 
-    func change_rate(rate: Float = 0.57) {
+    func change_rate(rate: Float = 0.5) {
         self.utterance.rate = rate
     }
     
