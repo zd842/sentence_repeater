@@ -13,8 +13,11 @@ class Fetch_Voice_from_Azure: ObservableObject {
     
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
+    let synthesizer: SPXSpeechSynthesizer
+    
     @Published var times: Int = 0
     @Published var input_text: String = "here two"
+    
     
     func increseTimes(step: Int) {
         times += step
@@ -24,7 +27,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
         times = 0
     }
     
-    func synthesisToSpeaker(times: Int, input_text: String) {
+    func initSynthesis(synthesizer: SPXSpeechSynthesizer) {
         var speechConfig: SPXSpeechConfiguration?
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
@@ -33,6 +36,18 @@ class Fetch_Voice_from_Azure: ObservableObject {
             speechConfig = nil
         }
         let synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+    }
+    
+    func synthesisToSpeaker(times: Int, input_text: String) {
+//        var speechConfig: SPXSpeechConfiguration?
+//        do {
+//            try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
+//        } catch {
+//            print("error \(error) happened")
+//            speechConfig = nil
+//        }
+//        let synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+        
         if input_text.isEmpty {
             return
         }

@@ -16,6 +16,7 @@ struct Sentence_RepeaterApp: App {
                 VStack {
                     Language_Change_List_UI()
                     Control_Buttons_UI()
+                        .frame(height: 30)
                 }
                 .background(Color.cyan)
                 
