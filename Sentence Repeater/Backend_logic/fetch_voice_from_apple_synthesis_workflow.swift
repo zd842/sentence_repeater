@@ -32,8 +32,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.change_postDelay()
         self.change_initialVolume()
         
-//        utterance.rate = 0.9
-        
         // Assign the voice to the utterance.
         utterance.voice = voice
     }
