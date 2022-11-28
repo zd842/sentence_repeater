@@ -19,7 +19,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     let repeat_value: Int = 200
     var language: String = "ja"
     var rate: Float = 0.5
-    var pitch: Float = 0.9
+    var pitch: Float = 1.0
     
     
     @Published var times: Int = 0
@@ -76,7 +76,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                 let vaa = AVSpeechSynthesisVoice(language: self.language)
                 urr.voice = vaa
                 urr.rate = self.rate
-                urr.pitchMultiplier = self.pitch
+                urr.pitchMultiplier = 1.3
                 self.voice_in_queue.append(urr)
             }
             for ur in self.voice_in_queue {
