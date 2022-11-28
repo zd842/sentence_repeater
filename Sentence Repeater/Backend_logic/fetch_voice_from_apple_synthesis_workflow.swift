@@ -35,7 +35,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
 
-    func change_rate(rate: Int = 1){
+    func change_rate(rate: Int = 2){
         if rate == 1 {
             self.rate =  0.5
         } else if rate == 2 {
@@ -57,7 +57,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.utterance.volume = initialVoice
     }
     
-    func change_detectedLanguage(detevtedLan: Int) {
+    func change_detectedLanguage(detevtedLan: Int = 1) {
         if detevtedLan == 0 {
             self.language =  "ja"
         } else if detevtedLan == 1 {
@@ -80,10 +80,10 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                 self.voice_in_queue.append(urr)
             }
             for ur in self.voice_in_queue {
-                print(ur.voice?.language)
-                print(ur.voice?.name)
-                print(ur.rate)
-                print(ur.pitchMultiplier)
+//                print(ur.voice?.language)
+//                print(ur.voice?.name)
+//                print(ur.rate)
+//                print(ur.pitchMultiplier)
                 self.synthesizer.speak(ur)
             }
         }
