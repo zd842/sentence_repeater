@@ -45,7 +45,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         }
     }
     
-    func change_pitch(pitch: Float = 0.9) {
+    func change_pitch(pitch: Float = 1.0) {
         self.pitch = pitch
     }
     

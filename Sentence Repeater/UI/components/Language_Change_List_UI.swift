@@ -50,7 +50,7 @@ struct Language_Change_List_UI: View {
             .onChange(of: selectedSpeed) {tag in fetch_voice_workflow_object.change_rate(rate: tag) }
             
             Slider(value: $selectedPitch, in: 0.5...2.0)
-        }
+                .tint(.cyan)
     }
 }
 
