@@ -31,17 +31,17 @@ struct Language_Change_List_UI: View {
                 Text("Taiwanese").tag(3)
             }
             .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag) }
-//            Picker("Voice", selection: $selectedVoice) {
-//                if selectedLanguage == .English {
-//                    Text("eng_1").tag(Language_voice.eng_1)
-//                    Text("eng_2").tag(Language_voice.eng_2)
-//                } else if selectedLanguage == .Japanese {
-//                    Text("jap_1").tag(Language_voice.jap_1)
-//                    Text("jap_2").tag(Language_voice.jap_2)
-//                } else {
-//                    Text("tw_1").tag(Language_voice.tw_1)
-//                }
-//            }
+            //            Picker("Voice", selection: $selectedVoice) {
+            //                if selectedLanguage == .English {
+            //                    Text("eng_1").tag(Language_voice.eng_1)
+            //                    Text("eng_2").tag(Language_voice.eng_2)
+            //                } else if selectedLanguage == .Japanese {
+            //                    Text("jap_1").tag(Language_voice.jap_1)
+            //                    Text("jap_2").tag(Language_voice.jap_2)
+            //                } else {
+            //                    Text("tw_1").tag(Language_voice.tw_1)
+            //                }
+            //            }
             Picker("Speed", selection: $selectedSpeed) {
                 Image(systemName: "tortoise").tag(0)
                 Image(systemName: "hare").tag(1)
@@ -51,6 +51,10 @@ struct Language_Change_List_UI: View {
             
             Slider(value: $selectedPitch, in: 0.5...2.0)
                 .tint(.cyan)
+                .onChange(of: selectedPitch, perform: {
+                    value in fetch_voice_workflow_object.change_pitch(pitch: value)
+                })
+        }
     }
 }
 
