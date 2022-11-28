@@ -22,18 +22,15 @@ struct Control_Buttons_UI: View {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
             })
-            Text("|")
+            Button(action: {}, label: {
+                Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
+            })
             Button(action: {}, label: {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
             })
             Text("|")
-            Button(action: {}, label: {
-                Image(systemName: "play.circle")
-                    .foregroundColor(Color.white)
-            })
-            
-           
             Button(action: {
                 print("one-time-shot play")
                 fetch_voice_workflow_object.synthesisToSpeaker(times: 0, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
