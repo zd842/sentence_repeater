@@ -15,7 +15,7 @@ struct Sentence_Content_UI: View {
             .font(Font.system(size: 50, weight: .semibold, design: .monospaced))
             .fixedSize(horizontal: false, vertical: true)
             .textFieldStyle(.roundedBorder)
-            .padding(10)
+            .padding(3)
             .onSubmit {
                 fetch_voice_workflow_object.input_text = sentence_content
             }
