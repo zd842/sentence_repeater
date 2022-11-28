@@ -13,10 +13,23 @@ class Fetch_Voice_from_Azure: ObservableObject {
     
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
-    let synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer()
+    var synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer()
     
     @Published var times: Int = 0
     @Published var input_text: String = "here two"
+    
+    init(sub: String = "23d9d42eccc94130b2e666168e8215b5",
+         region: String = "eastus",
+         synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer(),
+         times: Int = 0,
+         input_text: String = "fouth and forward") {
+        self.sub = sub
+        self.region = region
+        self.times = times
+        self.input_text = input_text
+        self.synthesizer = synthesizer
+        self.initSynthesis()
+    }
 
     
     func increseTimes(step: Int) {
@@ -61,7 +74,10 @@ class Fetch_Voice_from_Azure: ObservableObject {
                 print("cancelled, detail: \(cancellationDetails.errorDetails!) ")
             }
         }
-
+    }
+    
+    func stopStythesis() {
+        try! self.synthesizer.stopSpeaking()
     }
 
 }

@@ -59,7 +59,7 @@ struct Control_Buttons_UI: View {
                     .foregroundColor(Color.white)
             })
             Button(action: {
-                fetch_voice_workflow_object.synthesisToSpeaker(times: Int.max, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                fetch_voice_workflow_object.stopStythesis()
             }, label: {
                 Image(systemName: "stop.circle")
                     .foregroundColor(Color.white)
