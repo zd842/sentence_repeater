@@ -16,18 +16,19 @@ struct Control_Buttons_UI: View {
     var body: some View {
         HStack {
             Spacer()
-            Text("\($fetch_voice_workflow_object.times.wrappedValue) times")
+            Text("\($fetch_voice_workflow_object.times.wrappedValue) times  <- +")
                 .font(.system(.footnote))
+            
             Button(action: {}, label: {
-                Image(systemName: "play.circle")
+                Image(systemName: "1.circle")
                     .foregroundColor(Color.white)
             })
             Button(action: {}, label: {
-                Image(systemName: "play.circle")
+                Image(systemName: "5.circle")
                     .foregroundColor(Color.white)
             })
             Button(action: {}, label: {
-                Image(systemName: "play.circle")
+                Image(systemName: "10.circle")
                     .foregroundColor(Color.white)
             })
             Text("|")
