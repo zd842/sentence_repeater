@@ -19,7 +19,7 @@ struct Language_Change_List_UI: View {
     
     @State private var selectedLanguage: Int = 1
     @State private var selectedVoice: Int = 1
-    @State private var selectedSpeed: Int = 0
+    @State private var selectedSpeed: Int = 1
     @State private var selectedPitch: Float = 1.0
     
     var body: some View {
