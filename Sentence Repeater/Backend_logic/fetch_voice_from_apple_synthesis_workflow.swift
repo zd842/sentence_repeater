@@ -38,7 +38,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         if rate == 1 {
             self.rate =  0.5
         } else if rate == 2 {
-            self.rate =  0.9
+            self.rate =  0.7
         } else {
             self.rate =  0.3
         }
