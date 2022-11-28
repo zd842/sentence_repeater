@@ -14,9 +14,7 @@ struct Sentence_Content_UI: View {
         TextField("input a sentence", text: $sentence_content, axis: .vertical)
             .font(Font.system(size: 50, weight: .semibold, design: .monospaced))
             .fixedSize(horizontal: false, vertical: true)
-            .border(.cyan, width: 3)
-            .shadow(color: .black, radius: 10)
-            .cornerRadius(10)
+            .textFieldStyle(.roundedBorder)
             .padding(10)
             .onSubmit {
                 fetch_voice_workflow_object.input_text = sentence_content
