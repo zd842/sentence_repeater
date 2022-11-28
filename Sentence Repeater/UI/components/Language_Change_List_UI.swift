@@ -20,6 +20,7 @@ struct Language_Change_List_UI: View {
     @State private var selectedLanguage: Int = 0
     @State private var selectedVoice: Int = 0
     @State private var selectedSpeed: Int = 0
+    @State private var selectedPitch: Double = 0.5
     
     var body: some View {
         List {
@@ -47,6 +48,8 @@ struct Language_Change_List_UI: View {
                 Image(systemName: "bird").tag(2)
             }
             .onChange(of: selectedSpeed) {tag in fetch_voice_workflow_object.change_rate(rate: tag) }
+            
+            Slider(value: $selectedPitch, in: 0.0...1.3)
         }
     }
 }
