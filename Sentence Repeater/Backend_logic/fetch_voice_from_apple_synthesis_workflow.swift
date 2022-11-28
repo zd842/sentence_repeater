@@ -67,7 +67,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                     if (times != 0) {
                         self.synthesizer.speak(self.utterance)
                         }
-                }
+                    }
 
                 }
             }
