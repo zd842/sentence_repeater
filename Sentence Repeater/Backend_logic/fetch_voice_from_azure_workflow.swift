@@ -1,5 +1,5 @@
 //
-//  fetch_voice_from_polly_workflow.swift
+//  fetch_voice_from_azure_workflow.swift
 //  Sentence Repeater
 //
 //  Created by macos on 27/11/2022.
@@ -14,6 +14,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
     var sub: String
     var region: String
     var synthesizer: SPXSpeechSynthesizer
+//    var language_option: String
     
     @Published var times: Int
     @Published var input_text: String
@@ -22,7 +23,9 @@ class Fetch_Voice_from_Azure: ObservableObject {
          region: String = "eastus",
          synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer(),
          times: Int = 0,
-         input_text: String = "fourth and forward") {
+         input_text: String = "fourth and forward"
+//         language_option: String = ""
+    ) {
         self.sub = sub
         self.region = region
         self.times = times
@@ -44,11 +47,13 @@ class Fetch_Voice_from_Azure: ObservableObject {
         var speechConfig: SPXSpeechConfiguration?
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
+            
         } catch {
             print("error \(error) happened")
             speechConfig = nil
         }
-        self.synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+//        self.synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+        self.synthesizer = try! SPXSpeechSynthesizer(speechConfiguration: speechConfig!, autoDetectSourceLanguageConfiguration: SPXAutoDetectSourceLanguageConfiguration(["English", "Japanese", "Chinese"]))
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {

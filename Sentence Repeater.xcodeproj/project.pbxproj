@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22870F6929334D3100688BF9 /* fetch_voice_from_polly_workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */; };
+		22870F6929334D3100688BF9 /* fetch_voice_from_azure_workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22870F6829334D3100688BF9 /* fetch_voice_from_azure_workflow.swift */; };
 		228969C12932BF6E00E0AA51 /* Sentence_Content_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C02932BF6E00E0AA51 /* Sentence_Content_UI.swift */; };
 		228969C52932C66600E0AA51 /* Language_Change_List_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C42932C66600E0AA51 /* Language_Change_List_UI.swift */; };
 		228969C72932E1FF00E0AA51 /* Control_Buttons_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228969C62932E1FF00E0AA51 /* Control_Buttons_UI.swift */; };
@@ -43,7 +43,7 @@
 		1BF48F7844068DD7208495B0 /* Pods-Sentence RepeaterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence RepeaterTests.release.xcconfig"; path = "Target Support Files/Pods-Sentence RepeaterTests/Pods-Sentence RepeaterTests.release.xcconfig"; sourceTree = "<group>"; };
 		1C341959F2FDE25D3BB91346 /* Pods-Sentence RepeaterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence RepeaterTests.debug.xcconfig"; path = "Target Support Files/Pods-Sentence RepeaterTests/Pods-Sentence RepeaterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1E664407B2D2153069577125 /* Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sentence Repeater-Sentence RepeaterUITests/Pods-Sentence Repeater-Sentence RepeaterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetch_voice_from_polly_workflow.swift; sourceTree = "<group>"; };
+		22870F6829334D3100688BF9 /* fetch_voice_from_azure_workflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetch_voice_from_azure_workflow.swift; sourceTree = "<group>"; };
 		228969C02932BF6E00E0AA51 /* Sentence_Content_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence_Content_UI.swift; sourceTree = "<group>"; };
 		228969C42932C66600E0AA51 /* Language_Change_List_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language_Change_List_UI.swift; sourceTree = "<group>"; };
 		228969C62932E1FF00E0AA51 /* Control_Buttons_UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control_Buttons_UI.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		22870F6729334D0400688BF9 /* Backend_logic */ = {
 			isa = PBXGroup;
 			children = (
-				22870F6829334D3100688BF9 /* fetch_voice_from_polly_workflow.swift */,
+				22870F6829334D3100688BF9 /* fetch_voice_from_azure_workflow.swift */,
 			);
 			path = Backend_logic;
 			sourceTree = "<group>";
@@ -441,7 +441,7 @@
 				228969C52932C66600E0AA51 /* Language_Change_List_UI.swift in Sources */,
 				228969C12932BF6E00E0AA51 /* Sentence_Content_UI.swift in Sources */,
 				22C5F79B2932ADC700F96E78 /* Sentence_RepeaterApp.swift in Sources */,
-				22870F6929334D3100688BF9 /* fetch_voice_from_polly_workflow.swift in Sources */,
+				22870F6929334D3100688BF9 /* fetch_voice_from_azure_workflow.swift in Sources */,
 				228969C72932E1FF00E0AA51 /* Control_Buttons_UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
