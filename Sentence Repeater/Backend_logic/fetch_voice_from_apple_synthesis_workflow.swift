@@ -23,7 +23,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
 
     init() {
         self.input_text = "apple synth"
-        self.utterance = AVSpeechUtterance(self.input_text)
+        self.utterance = AVSpeechUtterance(string: self.input_text)
         self.change_rate()
         self.change_pitch()
         self.change_postDelay()
