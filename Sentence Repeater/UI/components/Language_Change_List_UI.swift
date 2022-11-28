@@ -50,9 +50,8 @@ struct Language_Change_List_UI: View {
                 Image(systemName: "tortoise right-to-left").tag("tortoise")
                 Image(systemName: "hare").tag("hare")
                 Image(systemName: "bird").tag("bird")
-                Image(systemName: car.side).tag("car")
+                Image(systemName: "car.side").tag("car")
                 Image(systemName: "airplane").tag("airplane")
-                
             }
             .onSubmit {
                 
