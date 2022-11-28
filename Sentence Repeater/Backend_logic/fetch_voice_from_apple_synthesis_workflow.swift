@@ -14,7 +14,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     // Create an utterance.
     var utterance = AVSpeechUtterance()
     // Retrieve the British English voice.
-    var voice = AVSpeechSynthesisVoice(language: "en-GB")
+    var voice = AVSpeechSynthesisVoice(language: "en-US")
     // Create a speech synthesizer.
     var voice_in_queue = [AVSpeechUtterance]()
     let synthesizer = AVSpeechSynthesizer()
@@ -68,12 +68,14 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     func change_detectedLanguage(detevtedLan: String) {
         if detevtedLan == "ja" {
             self.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-//            self.voice.voice
         } else if detevtedLan == "us" {
             self.voice = AVSpeechSynthesisVoice(identifier: "en-US")
         } else {
             self.voice = AVSpeechSynthesisVoice(language: "en-GB")
         }
+        print(self.voice?.language)
+        print(self.voice?.identifier)
+        print(self.voice?.name)
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
