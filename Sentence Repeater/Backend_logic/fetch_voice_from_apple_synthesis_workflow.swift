@@ -11,11 +11,8 @@ import MicrosoftCognitiveServicesSpeech
 import AVFoundation
 
 class Fetch_voice_from_apply_synth: ObservableObject {
-    // Create an utterance.
     var utterance = AVSpeechUtterance()
-    // Retrieve the British English voice.
     var voice = AVSpeechSynthesisVoice(language: "en-US")
-    // Create a speech synthesizer.
     var voice_in_queue = [AVSpeechUtterance]()
     let synthesizer = AVSpeechSynthesizer()
     
@@ -31,9 +28,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.change_pitch()
         self.change_postDelay()
         self.change_initialVolume()
-        
-        // Assign the voice to the utterance.
-        utterance.voice = voice
+        self.utterance.voice = voice
     }
     // Configure the utterance.
 //    utterance.rate = 0.9
