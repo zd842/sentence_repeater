@@ -21,6 +21,10 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     
     let repeat_value: Int = 200
     
+    enum rate_enum: String {
+        case tortoise, hare, bird
+    }
+    
     @Published var times: Int = 0
     @Published var input_text: String
 
@@ -41,8 +45,14 @@ class Fetch_voice_from_apply_synth: ObservableObject {
 //    utterance.volume = 0.8
     
 
-    func change_rate(rate: String = 0.5) {
-        self.utterance.rate = rate
+    func change_rate(rate: rate_enum = .hare) {
+        if rate == .tortoise {
+            self.utterance.rate = 0.3
+        } else if rate ==.bird {
+            self.utterance.rate = 0.5
+        } else {
+            self.utterance.rate = 0.9
+        }
     }
     
     func change_pitch(pitch: Float = 0.9) {
