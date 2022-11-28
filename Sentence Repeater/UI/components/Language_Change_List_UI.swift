@@ -50,7 +50,7 @@ struct Language_Change_List_UI: View {
                 Image(systemName: "bird").tag(2)
             }
             .onSubmit {
-//                fetch_voice_workflow_object.change_rate(rate: <#T##Float#>)
+                fetch_voice_workflow_object.change_rate(rate: $selectedSpeed.wrappedValue)
             }
         }
     }
