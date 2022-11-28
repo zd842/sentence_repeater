@@ -58,7 +58,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.voice = AVSpeechSynthesisVoice(language: detevtedLan)
     }
     
-    func synthesisToSpeaker(times: Int, intput_text: String) {
+    func synthesisToSpeaker(times: Int, input_text: String) {
         if times != 0 {
             for tt in 0...(times - 1) {
                 print(tt)
