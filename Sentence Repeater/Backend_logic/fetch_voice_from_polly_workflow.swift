@@ -13,11 +13,11 @@ class Fetch_Voice_from_Azure: ObservableObject {
     
     var sub: String = "23d9d42eccc94130b2e666168e8215b5"
     var region: String = "eastus"
-    let synthesizer: SPXSpeechSynthesizer
+    let synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer()
     
     @Published var times: Int = 0
     @Published var input_text: String = "here two"
-    
+
     
     func increseTimes(step: Int) {
         times += step
@@ -27,7 +27,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
         times = 0
     }
     
-    func initSynthesis(synthesizer: SPXSpeechSynthesizer) {
+    func initSynthesis() {
         var speechConfig: SPXSpeechConfiguration?
         do {
             try speechConfig = SPXSpeechConfiguration(subscription: sub, region: region)
@@ -35,7 +35,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
             print("error \(error) happened")
             speechConfig = nil
         }
-        let synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+        let self.synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
@@ -54,7 +54,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
 
         for tt in 0...times {
             print(tt)
-            let result = try! synthesizer.speakText(input_text)
+            let result = try! self.synthesizer.speakText(input_text)
             if result.reason == SPXResultReason.canceled
             {
                 let cancellationDetails = try! SPXSpeechSynthesisCancellationDetails(fromCanceledSynthesisResult: result)
