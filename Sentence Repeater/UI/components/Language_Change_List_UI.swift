@@ -19,14 +19,10 @@ struct Language_Change_List_UI: View {
         var id: Self { self }
     }
     
-    enum Word_up: String, CaseIterable, Identifiable {
-        case s0_9, s1_0, s1_2, s1_5, s2_0
-        var id: Self { self }
-    }
     
     @State private var selectedLanguage: Language_option = .Japanese
     @State private var selectedVoice: Language_voice = .jap_1
-    @State private var selectedSpeed: Word_up = .s0_9
+    @State private var selectedSpeed: Int = 0
     
     var body: some View {
         List {
@@ -47,11 +43,9 @@ struct Language_Change_List_UI: View {
 //                }
 //            }
             Picker("Speed", selection: $selectedSpeed) {
-                Image(systemName: "tortoise").tag("tortoise")
-                Image(systemName: "hare").tag("hare")
-                Image(systemName: "bird").tag("bird")
-                Image(systemName: "car.side").tag("car")
-                Image(systemName: "airplane").tag("airplane")
+                Image(systemName: "tortoise").tag(0)
+                Image(systemName: "hare").tag(1)
+                Image(systemName: "bird").tag(2)
             }
             .onSubmit {
                 
