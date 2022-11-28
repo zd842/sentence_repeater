@@ -32,11 +32,13 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.change_postDelay()
         self.change_initialVolume()
         
+//        utterance.rate = 0.9
+        
         // Assign the voice to the utterance.
         utterance.voice = voice
     }
     // Configure the utterance.
-//    utterance.rate= 0.57
+//    utterance.rate = 0.9
 //    utterance.pitchMultiplier = 0.8
 //    utterance.postUtteranceDelay = 0.2
 //    utterance.volume = 0.8
@@ -50,7 +52,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         } else {
             self.utterance.rate = 0.3
         }
-       
+        print(self.utterance.rate)
     }
     
     func change_pitch(pitch: Float = 0.9) {
