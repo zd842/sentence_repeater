@@ -21,7 +21,7 @@ struct Language_Change_List_UI: View {
     }
     
     
-    @State private var selectedLanguage: Language_option = .Japanese
+    @State private var selectedLanguage: Language_option = .ja
     @State private var selectedVoice: Language_voice = .jap_1
     @State private var selectedSpeed: Int = 0
     
