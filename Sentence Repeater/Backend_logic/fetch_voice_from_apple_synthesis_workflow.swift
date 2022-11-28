@@ -17,6 +17,9 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     var voice = AVSpeechSynthesisVoice(language: "en-GB")
     // Create a speech synthesizer.
     let synthesizer = AVSpeechSynthesizer()
+    
+    @Published var times: Int = 0
+    @Published var input_text: String = "apple synth"
 
     
     init() {
@@ -55,9 +58,21 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.voice = AVSpeechSynthesisVoice(language: detevtedLan)
     }
     
-    func synthSpeak() {
+    func synthesisToSpeaker() {
         self.synthesizer.speak(self.utterance)
     }
 
+    func resetTimes(){
+        self.times = 0
+    }
+    
+    func increseTimes(step: Int) {
+        self.times += step
+    }
+    
+    func stopStythesis() {
+        self.times = 0
+        self.synthesizer.stopSpeaking(at: .immediate)
+    }
 
 }
