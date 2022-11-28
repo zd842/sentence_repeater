@@ -11,12 +11,12 @@ import AVFoundation
 
 class Fetch_Voice_from_Azure: ObservableObject {
     
-    var sub: String = "23d9d42eccc94130b2e666168e8215b5"
-    var region: String = "eastus"
-    var synthesizer: SPXSpeechSynthesizer = SPXSpeechSynthesizer()
+    var sub: String
+    var region: String
+    var synthesizer: SPXSpeechSynthesizer
     
-    @Published var times: Int = 0
-    @Published var input_text: String = "here two"
+    @Published var times: Int
+    @Published var input_text: String
     
     init(sub: String = "23d9d42eccc94130b2e666168e8215b5",
          region: String = "eastus",
