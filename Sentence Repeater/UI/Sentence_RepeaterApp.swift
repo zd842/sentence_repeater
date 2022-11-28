@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Sentence_RepeaterApp: App {
-    @StateObject var fetch_voice_workflow_object = Fetch_Voice_from_Azure()
+    @StateObject var fetch_voice_workflow_object = Fetch_voice_from_apply_synth()
     var body: some Scene {
         WindowGroup {
             HStack{
