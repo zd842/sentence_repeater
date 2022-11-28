@@ -16,16 +16,24 @@ struct Control_Buttons_UI: View {
     var body: some View {
         HStack {
             Spacer()
-            Stepper(value: $fetch_voice_workflow_object.times,
-                     in: range,
-                     step: step) {
-                Text("\($fetch_voice_workflow_object.times.wrappedValue) times")
-                    .font(.system(.footnote))
-            }
-            .frame(width: 170)
-            .foregroundColor(Color.white)
-            
+            Text("\($fetch_voice_workflow_object.times.wrappedValue) times")
+                .font(.system(.footnote))
+            Button(action: {}, label: {
+                Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
+            })
             Text("|")
+            Button(action: {}, label: {
+                Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
+            })
+            Text("|")
+            Button(action: {}, label: {
+                Image(systemName: "play.circle")
+                    .foregroundColor(Color.white)
+            })
+            
+           
             Button(action: {
                 print("one-time-shot play")
                 fetch_voice_workflow_object.synthesisToSpeaker(times: 0, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
@@ -34,17 +42,6 @@ struct Control_Buttons_UI: View {
                     .foregroundColor(Color.white)
             })
             
-            Text("|")
-            Button(action: {
-                print("repetitively play")
-                if $fetch_voice_workflow_object.times.wrappedValue != 0 {
-                    fetch_voice_workflow_object.synthesisToSpeaker(times: ($fetch_voice_workflow_object.times.wrappedValue - 1), input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
-                }
-                
-            }, label: {
-                Image(systemName: "gobackward")
-                    .foregroundColor(Color.white)
-            })
             Spacer()
         }
     }
