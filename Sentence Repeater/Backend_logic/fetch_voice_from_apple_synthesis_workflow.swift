@@ -26,7 +26,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     @Published var input_text: String
 
     init() {
-        self.input_text = "this' a long sentence"
+        self.input_text = "input a sentence on the right-hand side please."
         self.utterance = AVSpeechUtterance(string: self.input_text)
         self.change_pitch()
         self.change_postDelay()
