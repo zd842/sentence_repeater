@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Control_Buttons_UI: View {
-    @EnvironmentObject var fetch_voice_workflow_object: Fetch_Voice_from_Azure
+    @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
 
 //    let step = 3
 //    let range = 0...50
