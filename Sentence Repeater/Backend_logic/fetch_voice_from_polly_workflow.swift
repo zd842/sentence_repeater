@@ -59,7 +59,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
         if times != 0 {
             for tt in 0...(times - 1) {
                 print(tt)
-                if (times == 0) {
+                if (times != 0) {
                     let result = try! self.synthesizer.speakText(input_text)
                     if result.reason == SPXResultReason.canceled
                     {
@@ -67,13 +67,13 @@ class Fetch_Voice_from_Azure: ObservableObject {
                         print("cancelled, detail: \(cancellationDetails.errorDetails!) ")
                     }
                 }
-
             }
         }
         
     }
     
     func stopStythesis() {
+        print(self.times)
         try! self.synthesizer.stopSpeaking()
         self.times = 0
     }
