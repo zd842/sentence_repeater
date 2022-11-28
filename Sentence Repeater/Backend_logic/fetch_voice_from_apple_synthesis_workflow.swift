@@ -48,7 +48,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     func change_rate(rate: rate_enum = .hare) {
         if rate == .tortoise {
             self.utterance.rate = 0.3
-        } else if rate ==.bird {
+        } else if rate == .bird {
             self.utterance.rate = 0.5
         } else {
             self.utterance.rate = 0.9
