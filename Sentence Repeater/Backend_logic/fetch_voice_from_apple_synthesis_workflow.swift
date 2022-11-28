@@ -56,11 +56,11 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
     func change_detectedLanguage(detevtedLan: Int) {
-        if detevtedLan == 1 {
+        if detevtedLan == 0 {
             self.utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        } else if detevtedLan == 2 {
-            self.utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        } else if detevtedLan == 0 {
+        } else if detevtedLan == 1 {
+            self.utterance.voice = AVSpeechSynthesisVoice(language: "ja")
+        } else if detevtedLan == 3 {
             self.utterance.voice = AVSpeechSynthesisVoice(language: "ja")
         } else {
             self.utterance.voice = AVSpeechSynthesisVoice(language: "zh-TW")
@@ -73,6 +73,8 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     func synthesisToSpeaker(times: Int, input_text: String) {
         if times != 0 {
             for _ in 0...(times - 1) {
+                var urr = AVSpeechUtterance(string: input_text)
+                var vaa = AVSpeechSynthesisVoice(language: "ja")
                 self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
             }
             for ur in self.voice_in_queue {
