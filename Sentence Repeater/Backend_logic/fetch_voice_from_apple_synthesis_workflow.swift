@@ -34,7 +34,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
 
-    func change_rate(rate: Int = 1) -> Float {
+    func change_rate(rate: Int = 1){
         if rate == 1 {
             self.rate =  0.5
         } else if rate == 2 {
@@ -74,7 +74,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                 let urr = AVSpeechUtterance(string: input_text)
                 let vaa = AVSpeechSynthesisVoice(language: self.language)
                 urr.voice = vaa
-                urr.rate = self.change_rate()
+                urr.rate = self.rate
                 self.voice_in_queue.append(urr)
             }
             for ur in self.voice_in_queue {
