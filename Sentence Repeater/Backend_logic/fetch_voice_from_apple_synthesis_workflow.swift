@@ -74,7 +74,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                 let urr = AVSpeechUtterance(string: input_text)
                 let vaa = AVSpeechSynthesisVoice(language: self.language)
                 urr.voice = vaa
-                urr.rate =
+                urr.rate = self.change_rate()
                 self.voice_in_queue.append(urr)
             }
             for ur in self.voice_in_queue {
