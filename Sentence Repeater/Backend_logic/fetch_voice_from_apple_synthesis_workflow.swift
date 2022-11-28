@@ -10,7 +10,7 @@ import Foundation
 import MicrosoftCognitiveServicesSpeech
 import AVFoundation
 
-class Fetch_voice_from_apply_synth {
+class Fetch_voice_from_apply_synth: ObservableObject {
     // Create an utterance.
     var utterance = AVSpeechUtterance(string: "The quick brown fox jumped over the lazy dog.")
     // Retrieve the British English voice.
