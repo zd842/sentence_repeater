@@ -73,7 +73,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
             for _ in 0...(times - 1) {
                 self.utterance.voice = AVSpeechSynthesisVoice(language: "zh-TW")
                 var urr = AVSpeechUtterance(string: input_text)
-                var vaa = AVSpeechSynthesisVoice(language: "ja")
+                var vaa = AVSpeechSynthesisVoice(language: self.language)
                 self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
             }
             for ur in self.voice_in_queue {
