@@ -18,6 +18,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     
     let repeat_value: Int = 200
     var language: String = "ja"
+    var rate: Float = 0.5
     
     
     @Published var times: Int = 0
@@ -35,11 +36,11 @@ class Fetch_voice_from_apply_synth: ObservableObject {
 
     func change_rate(rate: Int = 1) -> Float {
         if rate == 1 {
-           return 0.5
+            self.rate =  0.5
         } else if rate == 2 {
-            return 0.9
+            self.rate =  0.9
         } else {
-            return 0.3
+            self.rate =  0.3
         }
     }
     
