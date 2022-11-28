@@ -26,7 +26,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     @Published var input_text: String
 
     init() {
-        self.input_text = "apple synth"
+        self.input_text = "this' a long sentence"
         self.utterance = AVSpeechUtterance(string: self.input_text)
         self.change_pitch()
         self.change_postDelay()
@@ -73,9 +73,9 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         } else {
             self.utterance.voice = AVSpeechSynthesisVoice(language: "ja")
         }
-        print(self.voice?.language)
-        print(self.voice?.identifier)
-        print(self.voice?.name)
+        print(self.utterance.voice?.language)
+        print(self.utterance.voice?.identifier)
+        print(self.utterance.voice?.name)
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
@@ -85,6 +85,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
             }
             print(voice_in_queue.count)
             for ur in self.voice_in_queue {
+                print(ur.voice?.name)
                 self.synthesizer.speak(ur)
             }
         }
