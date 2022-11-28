@@ -65,10 +65,12 @@ class Fetch_voice_from_apply_synth: ObservableObject {
             for _ in 0...(times - 1) {
                 self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
             }
+            print(voice_in_queue.count)
             for ur in self.voice_in_queue {
                 self.synthesizer.speak(ur)
             }
         }
+        voice_in_queue.removeAll()
 
     }
 
@@ -81,7 +83,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
     func stopStythesis() {
-        self.times = 0
         self.synthesizer.stopSpeaking(at: .immediate)
     }
 
