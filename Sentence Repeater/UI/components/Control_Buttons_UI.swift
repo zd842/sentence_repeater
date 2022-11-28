@@ -47,13 +47,13 @@ struct Control_Buttons_UI: View {
             Text("|")
             Button(action: {
                 print("one-time-shot play")
-                fetch_voice_workflow_object.synthesisToSpeaker(times: 0, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
+                fetch_voice_workflow_object.synthesisToSpeaker(times: $fetch_voice_workflow_object.times.wrappedValue, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
             }, label: {
                 Image(systemName: "play.circle")
                     .foregroundColor(Color.white)
             })
             Button(action: {
-                print("endless shooting")
+                print("\(Int.max)")
                 fetch_voice_workflow_object.synthesisToSpeaker(times: Int.max, input_text: $fetch_voice_workflow_object.input_text.wrappedValue)
             }, label: {
                 Image(systemName: "repeat.circle")
