@@ -12,7 +12,7 @@ struct Language_Change_List_UI: View {
     @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
     
     enum Language_option: String{
-        case ja, "en-US", "en-GB"
+        case ja, us, uk
     }
     
     enum Language_voice: String, CaseIterable, Identifiable {
@@ -28,9 +28,9 @@ struct Language_Change_List_UI: View {
     var body: some View {
         List {
             Picker("Language", selection: $selectedLanguage) {
-                Text("Japanese").tag(Language_option.Japanese)
-                Text("English").tag(Language_option.English)
-                Text("Taiwanese").tag(Language_option.Taiwanese)
+                Text("Japanese").tag(Language_option.ja)
+                Text("English").tag(Language_option.us)
+                Text("Taiwanese").tag(Language_option.uk)
             }
             .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag.rawValue) }
 //            Picker("Voice", selection: $selectedVoice) {
