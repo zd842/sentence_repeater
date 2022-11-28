@@ -71,8 +71,9 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     func synthesisToSpeaker(times: Int, input_text: String) {
         if times != 0 {
             for _ in 0...(times - 1) {
-                var urr = AVSpeechUtterance(string: input_text)
-                var vaa = AVSpeechSynthesisVoice(language: self.language)
+                let urr = AVSpeechUtterance(string: input_text)
+                let vaa = AVSpeechSynthesisVoice(language: self.language)
+                urr.voice = vaa
                 self.voice_in_queue.append(urr)
             }
             for ur in self.voice_in_queue {
