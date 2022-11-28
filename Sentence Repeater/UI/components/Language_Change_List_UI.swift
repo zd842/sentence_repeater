@@ -47,11 +47,14 @@ struct Language_Change_List_UI: View {
 //                }
 //            }
             Picker("Speed", selection: $selectedSpeed) {
-                Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
                 Image(systemName: String).tag(<#T##tag: Hashable##Hashable#>)
                 Image(systemName: String).tag(<#T##tag: Hashable##Hashable#>)
+                Image(systemName: String).tag(<#T##tag: Hashable##Hashable#>)
                 Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
                 Image(systemName: <#T##String#>).tag(<#T##tag: Hashable##Hashable#>)
+            }
+            .onSubmit {
+                
             }
         }
     }
