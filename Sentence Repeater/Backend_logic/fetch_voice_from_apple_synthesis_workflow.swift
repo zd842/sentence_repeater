@@ -65,10 +65,10 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         self.utterance.volume = initialVoice
     }
     
-    func change_detectedLanguage(detevtedLan: String) {
-        if detevtedLan == "ja" {
+    func change_detectedLanguage(detevtedLan: Int) {
+        if detevtedLan == 1 {
             self.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-        } else if detevtedLan == "us" {
+        } else if detevtedLan == 2 {
             self.voice = AVSpeechSynthesisVoice(identifier: "en-US")
         } else {
             self.voice = AVSpeechSynthesisVoice(language: "en-GB")

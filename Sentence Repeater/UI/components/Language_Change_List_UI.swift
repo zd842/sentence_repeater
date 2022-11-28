@@ -14,11 +14,7 @@ struct Language_Change_List_UI: View {
     enum Language_option: String{
         case ja, us, uk
     }
-    
-    enum Language_voice: String, CaseIterable, Identifiable {
-        case jap_1, jap_2, eng_1, eng_2, tw_1
-        var id: Self { self }
-    }
+
     
     
     @State private var selectedLanguage: Language_option = .ja
@@ -28,9 +24,9 @@ struct Language_Change_List_UI: View {
     var body: some View {
         List {
             Picker("Language", selection: $selectedLanguage) {
-                Text("Japanese").tag(Language_option.ja)
-                Text("English-US").tag(Language_option.us)
-                Text("English-GB").tag(Language_option.uk)
+                Text("Japanese").tag(0)
+                Text("English-US").tag(1)
+                Text("English-GB").tag(2)
             }
             .onChange(of: selectedLanguage) {tag in fetch_voice_workflow_object.change_detectedLanguage(detevtedLan: tag.rawValue) }
 //            Picker("Voice", selection: $selectedVoice) {
