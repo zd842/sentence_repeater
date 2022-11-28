@@ -16,6 +16,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     // Retrieve the British English voice.
     var voice = AVSpeechSynthesisVoice(language: "en-GB")
     // Create a speech synthesizer.
+    var voice_in_queue = [AVSpeechUtterance]()
     let synthesizer = AVSpeechSynthesizer()
     
     @Published var times: Int = 0
@@ -60,17 +61,17 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
-        print("here")
+        for _ in 0...times {
+            self.voice_in_queue.append(input_text)
+        }
         if times != 0 {
             for tt in 0...(times - 1) {
-                while (!synthesizer.isSpeaking) {
                     if (times != 0) {
                         self.synthesizer.speak(self.utterance)
                         }
                     }
                 }
             }
-        }
 
     func resetTimes(){
         self.times = 0
