@@ -69,7 +69,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
         if detevtedLan == 1 {
             self.voice = AVSpeechSynthesisVoice(language: "en-US")
         } else if detevtedLan == 2 {
-            self.voice = AVSpeechSynthesisVoice(identifier: "en-GB")
+            self.voice = AVSpeechSynthesisVoice(language: "en-GB")
         } else {
             self.voice = AVSpeechSynthesisVoice(language: "ja")
         }
