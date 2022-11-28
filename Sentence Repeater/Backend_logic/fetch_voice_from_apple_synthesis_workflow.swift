@@ -61,12 +61,15 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
-        for _ in 0...times {
-            self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
+        if time != 0 {
+            for _ in 0...(times - 1) {
+                self.voice_in_queue.append(AVSpeechUtterance(string: input_text))
+            }
+            for ur in self.voice_in_queue {
+                self.synthesizer.speak(ur)
+            }
         }
-        for ur in self.voice_in_queue {
-            self.synthesizer.speak(ur)
-        }
+
     }
 
     func resetTimes(){
