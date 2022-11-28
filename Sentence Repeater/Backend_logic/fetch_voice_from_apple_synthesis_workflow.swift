@@ -19,7 +19,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     let repeat_value: Int = 200
     var language: String = "ja"
     var rate: Float = 0.5
-    var pitch: Double = 1.0
+    var pitch: Float = 1.0
     
     
     @Published var times: Int = 0
