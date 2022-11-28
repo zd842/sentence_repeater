@@ -68,7 +68,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
                 }
             }
         }
-    }
 
     func resetTimes(){
         self.times = 0
