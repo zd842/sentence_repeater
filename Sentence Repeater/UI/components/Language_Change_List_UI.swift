@@ -12,7 +12,7 @@ struct Language_Change_List_UI: View {
     @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
     
     enum Language_option: String, CaseIterable, Identifiable {
-        case ja, en-US, en-GB
+        case ja, "en-US", "en-GB"
         var id: Self { self }
     }
     
