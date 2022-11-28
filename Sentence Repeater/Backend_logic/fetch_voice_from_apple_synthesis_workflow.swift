@@ -17,7 +17,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     let synthesizer = AVSpeechSynthesizer()
     
     let repeat_value: Int = 200
-    var language: String = "ja"
+    var language: String = "en-US"
     var rate: Float = 0.5
     var pitch: Float = 1.0
     

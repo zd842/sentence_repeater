@@ -11,10 +11,11 @@ struct Sentence_Content_UI: View {
     @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
     @State private var sentence_content: String = ""
     var body: some View {
-        TextField("input a sentence", text: $sentence_content)
+        TextField("input a sentence", text: $sentence_content, axis: .vertical)
             .font(Font.system(size: 50, weight: .semibold, design: .monospaced))
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .fixedSize(horizontal: false, vertical: true)
+            .textFieldStyle(.roundedBorder)
             .padding()
             .onSubmit {
                 fetch_voice_workflow_object.input_text = sentence_content
