@@ -35,7 +35,7 @@ class Fetch_Voice_from_Azure: ObservableObject {
             print("error \(error) happened")
             speechConfig = nil
         }
-        let self.synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
+        self.synthesizer = try! SPXSpeechSynthesizer(speechConfig!)
     }
     
     func synthesisToSpeaker(times: Int, input_text: String) {
