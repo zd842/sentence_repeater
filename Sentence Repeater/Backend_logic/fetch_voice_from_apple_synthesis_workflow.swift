@@ -27,7 +27,6 @@ class Fetch_voice_from_apply_synth: ObservableObject {
     init() {
         self.input_text = "apple synth"
         self.utterance = AVSpeechUtterance(string: self.input_text)
-        self.change_rate()
         self.change_pitch()
         self.change_postDelay()
         self.change_initialVolume()
@@ -42,7 +41,7 @@ class Fetch_voice_from_apply_synth: ObservableObject {
 //    utterance.volume = 0.8
     
 
-    func change_rate(rate: Float = 0.5) {
+    func change_rate(rate: String = 0.5) {
         self.utterance.rate = rate
     }
     

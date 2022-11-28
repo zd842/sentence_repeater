@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Sentence_Content_UI: View {
-    @EnvironmentObject var fetch_voice_workflow_object: Fetch_Voice_from_Azure
+    @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
     @State private var sentence_content: String = ""
     var body: some View {
         TextField("input a sentence", text: $sentence_content)

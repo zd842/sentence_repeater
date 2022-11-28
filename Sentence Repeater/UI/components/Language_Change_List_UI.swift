@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Language_Change_List_UI: View {
     
+    @EnvironmentObject var fetch_voice_workflow_object: Fetch_voice_from_apply_synth
+    
     enum Language_option: String, CaseIterable, Identifiable {
         case Japanese, English, Taiwanese
         var id: Self { self }
@@ -48,7 +50,7 @@ struct Language_Change_List_UI: View {
                 Image(systemName: "bird").tag(2)
             }
             .onSubmit {
-                
+//                fetch_voice_workflow_object.change_rate(rate: <#T##Float#>)
             }
         }
     }
