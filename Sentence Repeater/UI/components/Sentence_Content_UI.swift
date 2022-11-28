@@ -13,10 +13,11 @@ struct Sentence_Content_UI: View {
     var body: some View {
         TextField("input a sentence", text: $sentence_content, axis: .vertical)
             .font(Font.system(size: 50, weight: .semibold, design: .monospaced))
-            .textFieldStyle(RoundedBorderTextFieldStyle())
             .fixedSize(horizontal: false, vertical: true)
-            .textFieldStyle(.roundedBorder)
-            .padding()
+            .border(.cyan, width: 3)
+            .shadow(color: .black, radius: 10)
+            .cornerRadius(10)
+            .padding(10)
             .onSubmit {
                 fetch_voice_workflow_object.input_text = sentence_content
             }
